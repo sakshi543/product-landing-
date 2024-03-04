@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tranquil Flames - Aroma Candles</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <img src="candle_logo.png" alt="Logo">
+      <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+      <nav>
+        <a href="index.html" class="account-option">Home</a>
+        <a href="products.html" class="account-option">Products</a>
+        <a href="#" class="account-option">About</a>
+        <a href="#" class="account-option">Contact</a>
+        <a href="#" class="account-option">My Account</a>
+      </nav>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container">
+      <img class="product-image" src="candle4.jpg" alt="Aroma Candle Image">
+      <h2>About Tranquil Flames</h2>
+      <p>Discover the perfect blend of fragrances crafted to create a calming atmosphere. 
+        <br>Our aroma candles are made with the finest ingredients to provide a truly tranquil experience.</p>
+      <a href="#" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+  <section>
+    <div class="container1">
+      <div>
+        <img class="product2" src="candle5.jpg" alt="Aroma-candle">
+      </div>
+      <div class="text1">
+        <p><b>Now with new Fragrances</b>
+        </p>
+      </div>
+      <div>
+        <img class="product2" src="candle6.jpg" alt="Aroma-candle">
+      </div>
+    </div>
+  </section>
+  <!-- Add this section after the existing <section> in your HTML -->
+<section id="product-details">
+  <div class="container">
+    <div class="product-info">
+      <div class="info-item">
+        <h3>REDUCES STRESS</h3>
+        <p>Stress relief is one of the biggest benefits of scented candles. We might not realize it but we constantly rely on our sense of smell</p>
+      </div>
+      <div class="info-item">
+        <h3>MAKES YOU FEEL REVITALIZED</h3>
+        <p>As scented candles add calming properties to the atmosphere, they can help you feel fresh and revitalized.</p>
+      </div>
+      <div class="info-item">
+        <h3>BRAIN BOOSTING</h3>
+        <p>Scented candles have brain-boosting qualities. Certain aromas like cinnamon, almond, and peppermint can affect your brain and stimulate concentration. So, adding scented candles in your office or workspace will improve your focus and productivity</p>
+      </div>
+    </div>
+    <h2>Features</h2>
+    <div class="product-features">
+      <img class="features" src="features.png" alt="features options">
+    </div>
+    <h2>Customer Reviews</h2>
+      <br><br>
+    <div class="customer-reviews">
+      <!--https://www.codingnepalweb.com/responsive-card-slider-javascript/-->
+      <button class="d" onclick="plusDivs(-1)">&#10094;</button>
+      <div class="review">
+        <h3>John Doe</h3>
+        <p>"A This aroma candle is amazing! The fragrance is long-lasting, and I love that it's cruelty-free. Definitely worth the purchase."</p>
+      </div>
+      <div class="review">
+        <h3>Jane Smith</h3>
+        <p>"B I bought this candle for my home office, and it creates a peaceful atmosphere. The quality is top-notch, and I appreciate the vegan ingredients."</p>
+      </div>
+      <div class="review">
+        <h3>John Doe</h3>
+        <p>"C This aroma candle is amazing! The fragrance is long-lasting, and I love that it's cruelty-free. Definitely worth the purchase."</p>
+      </div>
+      <div class="review">
+        <h3>Jane Smith</h3>
+        <p>"D I bought this candle for my home office, and it creates a peaceful atmosphere. The quality is top-notch, and I appreciate the vegan ingredients."</p>
+      </div>
+      <div class="review">
+        <h3>John Doe</h3>
+        <p>"E This aroma candle is amazing! The fragrance is long-lasting, and I love that it's cruelty-free. Definitely worth the purchase."</p>
+      </div>
+      <div class="review">
+        <h3>Jane Smith</h3>
+        <p>"F I bought this candle for my home office, and it creates a peaceful atmosphere. The quality is top-notch, and I appreciate the vegan ingredients."</p>
+      </div>
+      <button class="a" onclick="plusDivs(1)">&#10095;</button>
+      <button class="a" onclick="plusDivs(-1)">&#10094;</button>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2023 Tranquil Flames. will all later.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var navLinks = document.querySelectorAll('.account-option');
+      navLinks.forEach(function(link) {
+        link.classList.toggle('show');
+      });
+    }
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName(".review");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+
+
+
+
+
+</body>
+</html>
